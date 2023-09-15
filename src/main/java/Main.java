@@ -47,15 +47,15 @@ public class Main {
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("Некорректный ввод. Пожалуйста, введите цену товара.");
-                    scannerItems.next(); // Consume the invalid input
-                    continue; // Skip the rest of the loop and start again
+                    scannerItems.next();
+                    continue;
                 }
 
                 if (priceItem <= 0) {
-                    continue; // Skip the rest of the loop and start again
+                    continue;
                 }
 
-                break; // Exit the loop when a valid positive price is entered
+                break;
 
             }
             priceItems = (float) (priceItems + priceItem);
